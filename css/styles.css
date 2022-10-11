@@ -16,7 +16,8 @@
   --default-section-padding: 94px;
   --services-background-color: rgba(47, 48, 58, 0.8);
   --modal-background-color: rgba(0, 0, 0, 0.2);
-  --transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------------------- RESET CSS  start -------------------------------- */
@@ -125,7 +126,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   position: relative;
-  transition: color var(--transition-property);
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .header-link.link-current {
@@ -158,7 +159,7 @@ body {
   line-height: var(--default-lh);
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-  transition: color var(--transition-property);
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .header-mail:hover,
@@ -220,7 +221,8 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color var(--transition-property);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
 }
 
 .hero-btn:hover,
@@ -383,8 +385,9 @@ body {
   height: 100%;
   border-radius: 50%;
   color: var(--icon-team-clients-color);
-  transition: background-color var(--transition-property),
-    color var(--transition-property);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
 }
 
 .social-link .social-icon {
@@ -434,8 +437,8 @@ body {
   color: var(--icon-team-clients-color);
   border: 1px solid var(--icon-team-clients-color);
   border-radius: 4px;
-  transition: color var(--transition-property),
-    border-color var(--transition-property);
+  transition: color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing);
 }
 
 .clients-link .clients-icon {
@@ -474,9 +477,9 @@ body {
   background: var(--team-background-color);
   border-color: transparent;
   border-radius: 4px;
-  transition: color var(--transition-property),
-    background-color var(--transition-property),
-    box-shadow var(--transition-property);
+  transition: color var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .portfolio-btn:hover,
@@ -522,13 +525,13 @@ body {
   color: var(--background-btn-logo-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform var(--transition-property);
+  transition: transform var(--transition-duration) var(--transition-timing);
   overflow: auto;
 }
 
 .portfolio-link {
   display: block;
-  transition: box-shadow var(--transition-property);
+  transition: box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .portfolio-link:hover,
@@ -604,7 +607,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--background-btn-logo-color);
-  transition: color var(--transition-property);
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .footer-mail,
@@ -613,7 +616,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--transparent-color);
-  transition: color var(--transition-property);
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .footer-item {
@@ -662,7 +665,8 @@ body {
   height: 100%;
   color: var(--background-btn-logo-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--transition-property);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
 }
 
 .footer-social-link .social-icon {
@@ -683,8 +687,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--modal-background-color);
-  transition: opacity var(--transition-property),
-    visibility var(--transition-property);
+  transition: opacity var(--transition-duration) var(--transition-timing),
+    visibility var(--transition-duration) var(--transition-timing);
 }
 
 .modal {
@@ -698,7 +702,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform var(--transition-property);
+  transition: transform var(--transition-duration) var(--transition-timing);
 }
 
 .backdrop.is-hidden .modal {
